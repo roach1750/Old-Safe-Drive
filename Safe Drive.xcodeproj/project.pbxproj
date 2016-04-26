@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */; };
+		2143ABEC1CCEF59B008BBF2D /* ChildernTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABEB1CCEF59B008BBF2D /* ChildernTVC.m */; };
+		2143ABEF1CCEF70D008BBF2D /* TakeReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABEE1CCEF70D008BBF2D /* TakeReadingViewController.m */; };
+		2143ABF41CCEFCF8008BBF2D /* HistoryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF31CCEFCF8008BBF2D /* HistoryTVC.m */; };
+		2143ABF71CCEFD11008BBF2D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF61CCEFD11008BBF2D /* SettingsViewController.m */; };
+		2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF91CCEFD2E008BBF2D /* TripViewController.m */; };
+		2143ABFD1CCEFD5A008BBF2D /* ChildImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABFC1CCEFD5A008BBF2D /* ChildImageViewController.m */; };
+		2143ABFF1CCEFE45008BBF2D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2143ABFE1CCEFE45008BBF2D /* MapKit.framework */; };
 		21A3EA5A1CCED73E00B4A665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA591CCED73E00B4A665 /* main.m */; };
 		21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */; };
 		21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */; };
@@ -21,6 +28,19 @@
 		0EA8BFBFFF568303B8C44B1B /* Pods-Safe Drive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe Drive.release.xcconfig"; path = "Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive.release.xcconfig"; sourceTree = "<group>"; };
 		2143ABE71CCEEB9A008BBF2D /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
 		2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		2143ABEA1CCEF59B008BBF2D /* ChildernTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildernTVC.h; sourceTree = "<group>"; };
+		2143ABEB1CCEF59B008BBF2D /* ChildernTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildernTVC.m; sourceTree = "<group>"; };
+		2143ABED1CCEF70D008BBF2D /* TakeReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeReadingViewController.h; sourceTree = "<group>"; };
+		2143ABEE1CCEF70D008BBF2D /* TakeReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeReadingViewController.m; sourceTree = "<group>"; };
+		2143ABF21CCEFCF8008BBF2D /* HistoryTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTVC.h; sourceTree = "<group>"; };
+		2143ABF31CCEFCF8008BBF2D /* HistoryTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTVC.m; sourceTree = "<group>"; };
+		2143ABF51CCEFD11008BBF2D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2143ABF61CCEFD11008BBF2D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2143ABF81CCEFD2E008BBF2D /* TripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripViewController.h; sourceTree = "<group>"; };
+		2143ABF91CCEFD2E008BBF2D /* TripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripViewController.m; sourceTree = "<group>"; };
+		2143ABFB1CCEFD5A008BBF2D /* ChildImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildImageViewController.h; sourceTree = "<group>"; };
+		2143ABFC1CCEFD5A008BBF2D /* ChildImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildImageViewController.m; sourceTree = "<group>"; };
+		2143ABFE1CCEFE45008BBF2D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		21A3EA551CCED73E00B4A665 /* Safe Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3EA591CCED73E00B4A665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2143ABFF1CCEFE45008BBF2D /* MapKit.framework in Frameworks */,
 				C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +68,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2143ABF01CCEF715008BBF2D /* Child App */ = {
+			isa = PBXGroup;
+			children = (
+				2143ABED1CCEF70D008BBF2D /* TakeReadingViewController.h */,
+				2143ABEE1CCEF70D008BBF2D /* TakeReadingViewController.m */,
+			);
+			name = "Child App";
+			sourceTree = "<group>";
+		};
+		2143ABF11CCEF71B008BBF2D /* Parent App */ = {
+			isa = PBXGroup;
+			children = (
+				2143ABEA1CCEF59B008BBF2D /* ChildernTVC.h */,
+				2143ABEB1CCEF59B008BBF2D /* ChildernTVC.m */,
+				2143ABF21CCEFCF8008BBF2D /* HistoryTVC.h */,
+				2143ABF31CCEFCF8008BBF2D /* HistoryTVC.m */,
+				2143ABF81CCEFD2E008BBF2D /* TripViewController.h */,
+				2143ABF91CCEFD2E008BBF2D /* TripViewController.m */,
+				2143ABF51CCEFD11008BBF2D /* SettingsViewController.h */,
+				2143ABF61CCEFD11008BBF2D /* SettingsViewController.m */,
+				2143ABFB1CCEFD5A008BBF2D /* ChildImageViewController.h */,
+				2143ABFC1CCEFD5A008BBF2D /* ChildImageViewController.m */,
+			);
+			name = "Parent App";
+			sourceTree = "<group>";
+		};
 		21A3EA4C1CCED73E00B4A665 = {
 			isa = PBXGroup;
 			children = (
@@ -68,13 +115,13 @@
 		21A3EA571CCED73E00B4A665 /* Safe Drive */ = {
 			isa = PBXGroup;
 			children = (
-				21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */,
-				21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */,
 				21A3EA611CCED73E00B4A665 /* Main.storyboard */,
 				21A3EA5E1CCED73E00B4A665 /* LoginViewController.h */,
 				21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */,
 				2143ABE71CCEEB9A008BBF2D /* CreateAccountViewController.h */,
 				2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */,
+				2143ABF11CCEF71B008BBF2D /* Parent App */,
+				2143ABF01CCEF715008BBF2D /* Child App */,
 				21A3EA641CCED73E00B4A665 /* Assets.xcassets */,
 				21A3EA661CCED73E00B4A665 /* LaunchScreen.storyboard */,
 				21A3EA691CCED73E00B4A665 /* Info.plist */,
@@ -86,6 +133,8 @@
 		21A3EA581CCED73E00B4A665 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */,
+				21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */,
 				21A3EA591CCED73E00B4A665 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -94,6 +143,7 @@
 		45681DEE1E688C9D8BA300AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2143ABFE1CCEFE45008BBF2D /* MapKit.framework */,
 				6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */,
 			);
 			name = Frameworks;
@@ -142,6 +192,11 @@
 				TargetAttributes = {
 					21A3EA541CCED73E00B4A665 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -229,10 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */,
+				2143ABEF1CCEF70D008BBF2D /* TakeReadingViewController.m in Sources */,
 				2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */,
 				21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */,
 				21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */,
+				2143ABFD1CCEFD5A008BBF2D /* ChildImageViewController.m in Sources */,
+				2143ABF41CCEFCF8008BBF2D /* HistoryTVC.m in Sources */,
 				21A3EA5A1CCED73E00B4A665 /* main.m in Sources */,
+				2143ABF71CCEFD11008BBF2D /* SettingsViewController.m in Sources */,
+				2143ABEC1CCEF59B008BBF2D /* ChildernTVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

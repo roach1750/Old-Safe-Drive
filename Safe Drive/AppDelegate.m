@@ -40,8 +40,9 @@
         [UINavigationBar appearance].tintColor = [UIColor whiteColor];
     }
 
-                                                         
-    
+    [[UISegmentedControl appearance] setTitleTextAttributes:colorDictionary forState:UIControlStateNormal];
+    [[UISegmentedControl appearance] setTitleTextAttributes:colorDictionary forState:UIControlStateSelected];
+
 
     
     return YES;

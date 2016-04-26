@@ -7,25 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */; };
 		21A3EA5A1CCED73E00B4A665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA591CCED73E00B4A665 /* main.m */; };
 		21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */; };
-		21A3EA601CCED73E00B4A665 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* ViewController.m */; };
+		21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */; };
 		21A3EA631CCED73E00B4A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA611CCED73E00B4A665 /* Main.storyboard */; };
 		21A3EA651CCED73E00B4A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA641CCED73E00B4A665 /* Assets.xcassets */; };
 		21A3EA681CCED73E00B4A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA661CCED73E00B4A665 /* LaunchScreen.storyboard */; };
+		C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA8BFBFFF568303B8C44B1B /* Pods-Safe Drive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe Drive.release.xcconfig"; path = "Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive.release.xcconfig"; sourceTree = "<group>"; };
+		2143ABE71CCEEB9A008BBF2D /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 		21A3EA551CCED73E00B4A665 /* Safe Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3EA591CCED73E00B4A665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		21A3EA5E1CCED73E00B4A665 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		21A3EA5F1CCED73E00B4A665 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21A3EA5E1CCED73E00B4A665 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		21A3EA621CCED73E00B4A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21A3EA641CCED73E00B4A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21A3EA671CCED73E00B4A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21A3EA691CCED73E00B4A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350F36476500D258CE8CBCBE /* Pods-Safe Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe Drive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive.debug.xcconfig"; sourceTree = "<group>"; };
+		6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Safe Drive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,8 @@
 			children = (
 				21A3EA571CCED73E00B4A665 /* Safe Drive */,
 				21A3EA561CCED73E00B4A665 /* Products */,
+				E2B0ED1499C946FB93473ACE /* Pods */,
+				45681DEE1E688C9D8BA300AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +70,11 @@
 			children = (
 				21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */,
 				21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */,
-				21A3EA5E1CCED73E00B4A665 /* ViewController.h */,
-				21A3EA5F1CCED73E00B4A665 /* ViewController.m */,
 				21A3EA611CCED73E00B4A665 /* Main.storyboard */,
+				21A3EA5E1CCED73E00B4A665 /* LoginViewController.h */,
+				21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */,
+				2143ABE71CCEEB9A008BBF2D /* CreateAccountViewController.h */,
+				2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */,
 				21A3EA641CCED73E00B4A665 /* Assets.xcassets */,
 				21A3EA661CCED73E00B4A665 /* LaunchScreen.storyboard */,
 				21A3EA691CCED73E00B4A665 /* Info.plist */,
@@ -79,6 +91,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		45681DEE1E688C9D8BA300AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2B0ED1499C946FB93473ACE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				350F36476500D258CE8CBCBE /* Pods-Safe Drive.debug.xcconfig */,
+				0EA8BFBFFF568303B8C44B1B /* Pods-Safe Drive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21A3EA6C1CCED73E00B4A665 /* Build configuration list for PBXNativeTarget "Safe Drive" */;
 			buildPhases = (
+				3C73B9F4B32628EEF60B5DCB /* Check Pods Manifest.lock */,
 				21A3EA511CCED73E00B4A665 /* Sources */,
 				21A3EA521CCED73E00B4A665 /* Frameworks */,
 				21A3EA531CCED73E00B4A665 /* Resources */,
+				09506A59828D6086C518437C /* Embed Pods Frameworks */,
+				592873E54481E76E16ADB637 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,12 +176,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09506A59828D6086C518437C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C73B9F4B32628EEF60B5DCB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		592873E54481E76E16ADB637 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21A3EA511CCED73E00B4A665 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A3EA601CCED73E00B4A665 /* ViewController.m in Sources */,
+				2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */,
+				21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */,
 				21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */,
 				21A3EA5A1CCED73E00B4A665 /* main.m in Sources */,
 			);
@@ -261,6 +342,7 @@
 		};
 		21A3EA6D1CCED73E00B4A665 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 350F36476500D258CE8CBCBE /* Pods-Safe Drive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Safe Drive/Info.plist";
@@ -272,6 +354,7 @@
 		};
 		21A3EA6E1CCED73E00B4A665 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA8BFBFFF568303B8C44B1B /* Pods-Safe Drive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Safe Drive/Info.plist";
@@ -300,6 +383,7 @@
 				21A3EA6E1CCED73E00B4A665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

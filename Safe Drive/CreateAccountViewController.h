@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CreateAccountViewController.h
 //  Safe Drive
 //
 //  Created by Andrew Roach on 4/25/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CreateAccountViewController : UIViewController
 
 @end
-

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <KinveyKit/KinveyKit.h>
+
 
 @interface AppDelegate ()
 
@@ -16,7 +18,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [[KCSClient sharedClient] initializeKinveyServiceForAppKey:@"kid_Z1wsBdDoWW"
+                                                 withAppSecret:@"f3e61890e5e448d1b84a1966ae561df0"
+                                                  usingOptions:nil];
+    [KCSPing pingKinveyWithBlock:^(KCSPingResult *result) {
+        if (result.pingWasSuccessful) {
+            NSLog(@"Kinvey Ping Success");
+        } else {
+            NSLog(@"Kinvey Ping Failed");
+        }
+    }];
+    
+      [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:233.0 / 255.0 green:65.0 / 255.0 blue:86.0 / 255.0 alpha:1.0]];
+    
+    NSDictionary *colorDictionary = [NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:colorDictionary];
+    
+    if([UINavigationBar conformsToProtocol:@protocol(UIAppearanceContainer)]) {
+        [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    }
+
+                                                         
+    
+
+    
     return YES;
 }
 

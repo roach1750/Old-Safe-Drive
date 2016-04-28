@@ -36,7 +36,6 @@
     
     for (Settings *setting in self.kD.settings) {
         if ([setting.childUserName isEqualToString:[KCSUser activeUser].email]) {
-            NSLog(@"Found Parent");
             self.matchingSetting = setting;
             [self updateButtonsToFoundParent:setting.parentUserName];
             return;

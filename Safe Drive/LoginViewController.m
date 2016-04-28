@@ -8,23 +8,24 @@
 
 #import "LoginViewController.h"
 #import <KinveyKit/KinveyKit.h>
-
+#import "KinveyDownloader.h"
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *createAccountButton;
-
+@property (strong, nonatomic) KinveyDownloader *kD;
 @end
 
 @implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[KCSUser activeUser]logout];
-//    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginIfUserExists) userInfo:nil repeats:NO];
-
+//    [[KCSUser activeUser]logout];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginIfUserExists) userInfo:nil repeats:NO];
+    self.kD = [[KinveyDownloader alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(segugeAsChild) name:@"SettingsDownloaded" object:nil];
 }
 
 
@@ -37,7 +38,7 @@
             [self performSegueWithIdentifier:@"startAsParent" sender:nil];
         }
         else { //child
-            [self performSegueWithIdentifier:@"startAsChild" sender:nil];
+            [self.kD downloadSettingsAsChild];
         }
     }
 }
@@ -58,7 +59,7 @@
                 [self performSegueWithIdentifier:@"startAsParent" sender:nil];
             }
             else { //child
-                [self performSegueWithIdentifier:@"startAsChild" sender:nil];
+                [self.kD downloadSettingsAsChild];
             }
             
             
@@ -68,6 +69,18 @@
     }];
 }
 
+-(void)segugeAsChild{
+    
+    if ([self.kD.settings count] > 0) {
+        [self performSegueWithIdentifier:@"startTest" sender:nil];
+
+    }
+    else {
+        [self performSegueWithIdentifier:@"startAsChild" sender:nil];
+    }
+
+    
+}
 
 
 @end

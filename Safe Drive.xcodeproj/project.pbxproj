@@ -18,6 +18,7 @@
 		2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD41CD19D5D00E7E34D /* Settings.m */; };
 		2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD91CD24AB300E7E34D /* KinveyUploader.m */; };
 		2169CFDD1CD24FB700E7E34D /* KinveyDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */; };
+		2169CFE01CD29E9200E7E34D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFDF1CD29E9200E7E34D /* TestViewController.m */; };
 		21A3EA5A1CCED73E00B4A665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA591CCED73E00B4A665 /* main.m */; };
 		21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */; };
 		21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */; };
@@ -50,6 +51,8 @@
 		2169CFD91CD24AB300E7E34D /* KinveyUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyUploader.m; sourceTree = "<group>"; };
 		2169CFDB1CD24FB700E7E34D /* KinveyDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyDownloader.h; sourceTree = "<group>"; };
 		2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyDownloader.m; sourceTree = "<group>"; };
+		2169CFDE1CD29E9200E7E34D /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		2169CFDF1CD29E9200E7E34D /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		21A3EA551CCED73E00B4A665 /* Safe Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3EA591CCED73E00B4A665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 			children = (
 				2143ABED1CCEF70D008BBF2D /* ConfirmParentViewController.h */,
 				2143ABEE1CCEF70D008BBF2D /* ConfirmParentViewController.m */,
+				2169CFDE1CD29E9200E7E34D /* TestViewController.h */,
+				2169CFDF1CD29E9200E7E34D /* TestViewController.m */,
 			);
 			name = "Child App";
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			files = (
 				2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */,
 				2143ABEF1CCEF70D008BBF2D /* ConfirmParentViewController.m in Sources */,
+				2169CFE01CD29E9200E7E34D /* TestViewController.m in Sources */,
 				2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */,
 				2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */,
 				21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */,

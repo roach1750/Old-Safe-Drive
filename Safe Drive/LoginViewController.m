@@ -22,8 +22,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginIfUserExists) userInfo:nil repeats:NO];
+
 }
 
+
+
+-(void)loginIfUserExists{
+    if ([KCSUser activeUser] != nil) {
+        NSLog(@"Logged in as: %@",[[KCSUser activeUser] username]);
+        NSString *userType = [[KCSUser activeUser] getValueForAttribute:@"User Type"];
+        if ([userType isEqualToString:@"Parent"]) {
+            [self performSegueWithIdentifier:@"startAsParent" sender:nil];
+        }
+        else { //child
+            [self performSegueWithIdentifier:@"startAsChild" sender:nil];
+        }
+    }
+}
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
     NSString *userName = self.emailTextField.text;

@@ -78,6 +78,15 @@
               withCompletionBlock:^(KCSUser *user, NSError *errorOrNil, KCSUserActionResult result) {
                   if (errorOrNil == nil) {
                       NSLog(@"Created new user!");
+                      NSString *userType = [[KCSUser activeUser] getValueForAttribute:@"User Type"];
+                      NSLog(@"%@",userType);
+                      if ([userType isEqualToString:@"Parent"]) {
+                          [self performSegueWithIdentifier:@"startAsParent" sender:nil];
+                      }
+                      else { //child
+                          [self performSegueWithIdentifier:@"startAsChild" sender:nil];
+                      }
+                      
                   } else {
                       //there was an error with the update save
                       NSLog(@"%@",errorOrNil);

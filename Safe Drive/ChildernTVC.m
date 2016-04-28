@@ -19,7 +19,35 @@
     
 }
 - (IBAction)addChildButtonPressed:(UIBarButtonItem *)sender {
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Add Child"
+                                          message:@"Please enter your child's email address"
+                                          preferredStyle:UIAlertControllerStyleAlert];
     
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField){}];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:@"Request"
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"%@",alertController.textFields.firstObject.text);
+                                   
+                               }];
+    
+    UIAlertAction* cancel = [UIAlertAction
+                             actionWithTitle:@"Cancel"
+                             style:UIAlertActionStyleCancel
+                             handler:^(UIAlertAction * action)
+                             {
+                                 [alertController dismissViewControllerAnimated:YES completion:nil];
+                                 
+                             }];
+    
+    [alertController addAction:cancel];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+
 }
 
 

@@ -515,10 +515,10 @@
             </objects>
             <point key="canvasLocation" x="5391" y="1358"/>
         </scene>
-        <!--View Controller-->
+        <!--Safe Drive-->
         <scene sceneID="XAR-sM-D2a">
             <objects>
-                <viewController id="KfU-X5-GXj" sceneMemberID="viewController">
+                <viewController id="KfU-X5-GXj" customClass="TestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="m5u-Ul-Pu3"/>
                         <viewControllerLayoutGuide type="bottom" id="1gV-1G-60r"/>
@@ -526,9 +526,30 @@
                     <view key="view" contentMode="scaleToFill" id="N6H-gc-N4T">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiG-ym-ijA">
+                                <rect key="frame" x="20" y="72" width="560" height="90"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.1960784314" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Connet to Breathalyzer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButtonPressed:" destination="KfU-X5-GXj" eventType="touchUpInside" id="241-39-yKg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LiG-ym-ijA" firstAttribute="leading" secondItem="N6H-gc-N4T" secondAttribute="leadingMargin" id="1C8-8V-beg"/>
+                            <constraint firstItem="LiG-ym-ijA" firstAttribute="top" secondItem="m5u-Ul-Pu3" secondAttribute="bottom" constant="8" id="Hp8-a4-GoL"/>
+                            <constraint firstItem="LiG-ym-ijA" firstAttribute="trailing" secondItem="N6H-gc-N4T" secondAttribute="trailingMargin" id="PFL-Kj-C63"/>
+                            <constraint firstItem="LiG-ym-ijA" firstAttribute="height" secondItem="N6H-gc-N4T" secondAttribute="height" multiplier="0.15" id="p7U-Jx-PfS"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="a8y-xs-GtR"/>
+                    <navigationItem key="navigationItem" title="Safe Drive" id="ZUy-MG-FgM"/>
+                    <connections>
+                        <outlet property="connectButton" destination="LiG-ym-ijA" id="63C-gH-yyr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yJ-GJ-QHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

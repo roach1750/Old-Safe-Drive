@@ -19,6 +19,7 @@
 		2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD91CD24AB300E7E34D /* KinveyUploader.m */; };
 		2169CFDD1CD24FB700E7E34D /* KinveyDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */; };
 		2169CFE01CD29E9200E7E34D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFDF1CD29E9200E7E34D /* TestViewController.m */; };
+		2169CFE41CD2A55600E7E34D /* libBACtrackSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */; };
 		21A3EA5A1CCED73E00B4A665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA591CCED73E00B4A665 /* main.m */; };
 		21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */; };
 		21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */; };
@@ -53,6 +54,7 @@
 		2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyDownloader.m; sourceTree = "<group>"; };
 		2169CFDE1CD29E9200E7E34D /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		2169CFDF1CD29E9200E7E34D /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBACtrackSDK.a; path = "Safe Drive/libBACtrackSDK.a"; sourceTree = "<group>"; };
 		21A3EA551CCED73E00B4A665 /* Safe Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3EA591CCED73E00B4A665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2169CFE41CD2A55600E7E34D /* libBACtrackSDK.a in Frameworks */,
 				2143ABFF1CCEFE45008BBF2D /* MapKit.framework in Frameworks */,
 				C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */,
 			);
@@ -179,6 +182,7 @@
 		45681DEE1E688C9D8BA300AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */,
 				2143ABFE1CCEFE45008BBF2D /* MapKit.framework */,
 				6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */,
 			);
@@ -448,6 +452,34 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Safe Drive/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Safe",
+					Drive,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"KinveyKit\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "awesomeApps.Safe-Drive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -460,6 +492,34 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Safe Drive/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Safe",
+					Drive,
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"KinveyKit\"",
+					"-l\"sqlite3\"",
+					"-framework",
+					"\"Accounts\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "awesomeApps.Safe-Drive";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

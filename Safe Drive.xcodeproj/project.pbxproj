@@ -17,6 +17,7 @@
 		2143ABFF1CCEFE45008BBF2D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2143ABFE1CCEFE45008BBF2D /* MapKit.framework */; };
 		2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD41CD19D5D00E7E34D /* Settings.m */; };
 		2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD91CD24AB300E7E34D /* KinveyUploader.m */; };
+		2169CFDD1CD24FB700E7E34D /* KinveyDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */; };
 		21A3EA5A1CCED73E00B4A665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA591CCED73E00B4A665 /* main.m */; };
 		21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */; };
 		21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */; };
@@ -47,6 +48,8 @@
 		2169CFD41CD19D5D00E7E34D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		2169CFD81CD24AB300E7E34D /* KinveyUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyUploader.h; sourceTree = "<group>"; };
 		2169CFD91CD24AB300E7E34D /* KinveyUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyUploader.m; sourceTree = "<group>"; };
+		2169CFDB1CD24FB700E7E34D /* KinveyDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyDownloader.h; sourceTree = "<group>"; };
+		2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyDownloader.m; sourceTree = "<group>"; };
 		21A3EA551CCED73E00B4A665 /* Safe Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3EA591CCED73E00B4A665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				2169CFD41CD19D5D00E7E34D /* Settings.m */,
 				2169CFD81CD24AB300E7E34D /* KinveyUploader.h */,
 				2169CFD91CD24AB300E7E34D /* KinveyUploader.m */,
+				2169CFDB1CD24FB700E7E34D /* KinveyDownloader.h */,
+				2169CFDC1CD24FB700E7E34D /* KinveyDownloader.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */,
 				2143ABF71CCEFD11008BBF2D /* SettingsViewController.m in Sources */,
 				2143ABEC1CCEF59B008BBF2D /* ChildernTVC.m in Sources */,
+				2169CFDD1CD24FB700E7E34D /* KinveyDownloader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

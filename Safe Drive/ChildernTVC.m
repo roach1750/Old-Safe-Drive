@@ -8,17 +8,30 @@
 
 #import "ChildernTVC.h"
 #import "KinveyUploader.h"
+#import "KinveyDownloader.h"
+#import "Settings.h"
 
 @interface ChildernTVC ()
 
+@property (strong,nonatomic) KinveyDownloader *kD;
+@property (strong, nonatomic) NSArray *settings;
 @end
 
 @implementation ChildernTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.kD = [[KinveyDownloader alloc] init];
+    [self.kD downloadSettings];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadTable)
+                                                 name:@"SettingsDownloaded"
+                                               object:nil];
 }
+
+
+
+
 - (IBAction)addChildButtonPressed:(UIBarButtonItem *)sender {
     UIAlertController *alertController = [UIAlertController
                                           alertControllerWithTitle:@"Add Child"
@@ -61,12 +74,18 @@
 
 #pragma mark - Table view data source
 
+
+-(void)reloadTable{
+    self.settings = self.kD.settings;
+    [self.tableView reloadData];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.settings count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -77,8 +96,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"child"];
     }
     
-    cell.textLabel.text =  @"child1";
-
+    Settings *setting = [self.settings objectAtIndex:indexPath.row];
+    cell.textLabel.text =  setting.childUserName;
     
     return cell;
     

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */; };
 		2143ABEC1CCEF59B008BBF2D /* ChildernTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABEB1CCEF59B008BBF2D /* ChildernTVC.m */; };
-		2143ABEF1CCEF70D008BBF2D /* TakeReadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABEE1CCEF70D008BBF2D /* TakeReadingViewController.m */; };
+		2143ABEF1CCEF70D008BBF2D /* ConfirmParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABEE1CCEF70D008BBF2D /* ConfirmParentViewController.m */; };
 		2143ABF41CCEFCF8008BBF2D /* HistoryTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF31CCEFCF8008BBF2D /* HistoryTVC.m */; };
 		2143ABF71CCEFD11008BBF2D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF61CCEFD11008BBF2D /* SettingsViewController.m */; };
 		2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF91CCEFD2E008BBF2D /* TripViewController.m */; };
@@ -33,8 +33,8 @@
 		2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 		2143ABEA1CCEF59B008BBF2D /* ChildernTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildernTVC.h; sourceTree = "<group>"; };
 		2143ABEB1CCEF59B008BBF2D /* ChildernTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildernTVC.m; sourceTree = "<group>"; };
-		2143ABED1CCEF70D008BBF2D /* TakeReadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakeReadingViewController.h; sourceTree = "<group>"; };
-		2143ABEE1CCEF70D008BBF2D /* TakeReadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakeReadingViewController.m; sourceTree = "<group>"; };
+		2143ABED1CCEF70D008BBF2D /* ConfirmParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmParentViewController.h; sourceTree = "<group>"; };
+		2143ABEE1CCEF70D008BBF2D /* ConfirmParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmParentViewController.m; sourceTree = "<group>"; };
 		2143ABF21CCEFCF8008BBF2D /* HistoryTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTVC.h; sourceTree = "<group>"; };
 		2143ABF31CCEFCF8008BBF2D /* HistoryTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTVC.m; sourceTree = "<group>"; };
 		2143ABF51CCEFD11008BBF2D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		2143ABF01CCEF715008BBF2D /* Child App */ = {
 			isa = PBXGroup;
 			children = (
-				2143ABED1CCEF70D008BBF2D /* TakeReadingViewController.h */,
-				2143ABEE1CCEF70D008BBF2D /* TakeReadingViewController.m */,
+				2143ABED1CCEF70D008BBF2D /* ConfirmParentViewController.h */,
+				2143ABEE1CCEF70D008BBF2D /* ConfirmParentViewController.m */,
 			);
 			name = "Child App";
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */,
-				2143ABEF1CCEF70D008BBF2D /* TakeReadingViewController.m in Sources */,
+				2143ABEF1CCEF70D008BBF2D /* ConfirmParentViewController.m in Sources */,
 				2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */,
 				2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */,
 				21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */,

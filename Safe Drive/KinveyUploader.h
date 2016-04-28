@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <KinveyKit/KinveyKit.h>
+#import "Settings.h"
 
 @interface KinveyUploader : NSObject
 
 -(void)uploadDefaultSettingsWithChildEmail:(NSString *)email;
+-(void)uploadSetting:(Settings *)setting;
 
 @end

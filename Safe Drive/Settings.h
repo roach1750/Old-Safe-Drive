@@ -16,5 +16,6 @@
 @property (nonatomic, retain) NSString *parentUserName;
 @property (nonatomic, retain) NSNumber *bacLimit;
 @property (nonatomic, retain) NSNumber *confirmedLink;
+@property (nonatomic, retain) KCSMetadata* metadata; //Kinvey metadata
 
 @end

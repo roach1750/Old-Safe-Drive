@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TakeReadingViewController : UIViewController
+@interface ConfirmParentViewController : UIViewController
 
 @end

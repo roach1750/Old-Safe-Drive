@@ -11,5 +11,7 @@
 
 @interface KinveyDownloader : NSObject
 @property (strong, nonatomic) NSArray *settings;
--(void)downloadSettings;
+-(void)downloadSettingsAsParent;
+-(void)downloadSettingsAsChild;
+
 @end

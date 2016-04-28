@@ -13,7 +13,7 @@
 
 - (NSDictionary *)hostToKinveyPropertyMapping
 {
-    return  @{ @"objectId" : KCSEntityKeyId, @"childUserName" : @"childUserName", @"bacLimit":@"bacLimit", @"parentUserName" : @"parentUserName", @"confirmedLink" : @"confirmedLink" };
+    return  @{ @"objectId" : KCSEntityKeyId, @"childUserName" : @"childUserName", @"bacLimit":@"bacLimit", @"parentUserName" : @"parentUserName", @"confirmedLink" : @"confirmedLink", @"metadata" : KCSEntityKeyMetadata  };
 }
 
 

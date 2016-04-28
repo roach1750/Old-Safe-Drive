@@ -22,7 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginIfUserExists) userInfo:nil repeats:NO];
+    [[KCSUser activeUser]logout];
+//    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginIfUserExists) userInfo:nil repeats:NO];
 
 }
 

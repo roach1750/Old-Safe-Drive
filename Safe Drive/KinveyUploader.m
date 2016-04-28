@@ -7,7 +7,6 @@
 //
 
 #import "KinveyUploader.h"
-#import "Settings.h"
 @implementation KinveyUploader
 
 
@@ -18,20 +17,30 @@
     [settingToUpload setBacLimit:[NSNumber numberWithInt:0.0]];
     [settingToUpload setParentUserName:[KCSUser activeUser].username];
     [settingToUpload setConfirmedLink:[NSNumber numberWithBool:FALSE]];
+    if (!settingToUpload.metadata) {
+        settingToUpload.metadata = [[KCSMetadata alloc] init];
+    }
+    [settingToUpload.metadata setGloballyReadable:TRUE];
+    [settingToUpload.metadata setGloballyWritable:TRUE];
+
     
+    [self uploadSetting:settingToUpload];
+    
+}
+
+-(void)uploadSetting:(Settings *)setting {
+
     KCSCollection* collection = [KCSCollection collectionFromString:@"Settings" ofClass:[Settings class]];
     KCSAppdataStore *store = [KCSAppdataStore storeWithCollection:collection options:nil];
-    
-    [store saveObject:settingToUpload withCompletionBlock:^(NSArray *objectsOrNil, NSError *errorOrNil) {
+    [store saveObject:setting withCompletionBlock:^(NSArray *objectsOrNil, NSError *errorOrNil) {
         if (errorOrNil != nil) {
             //save failed
-            NSLog(@"Save failed, with error: %@", [errorOrNil localizedFailureReason]);
+            NSLog(@"Save failed, with error: %@", [errorOrNil description]);
         } else {
             //save was successful
             NSLog(@"Successfully saved event (id='%@').", [objectsOrNil[0] kinveyObjectId]);
         }
     } withProgressBlock:nil];
-    
 }
 
 

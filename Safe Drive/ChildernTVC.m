@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.kD = [[KinveyDownloader alloc] init];
-    [self.kD downloadSettings];
+    [self.kD downloadSettingsAsParent];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reloadTable)
                                                  name:@"SettingsDownloaded"
@@ -79,6 +79,9 @@
     self.settings = self.kD.settings;
     [self.tableView reloadData];
 }
+- (IBAction)reloadButtonPressed:(UIBarButtonItem *)sender {
+        [self.kD downloadSettingsAsParent];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -97,11 +100,32 @@
     }
     
     Settings *setting = [self.settings objectAtIndex:indexPath.row];
+    
+
+
+
+    
+    NSString *imageName = [setting.confirmedLink boolValue] ? @"Green" : @"Red";
+    
+    cell.detailTextLabel.text = [setting.confirmedLink boolValue] ? @"Confirmed" : @"Unconfirmed";
+    
+    cell.accessoryView = [self makeDetailButton:imageName];
+    
     cell.textLabel.text =  setting.childUserName;
     
     return cell;
     
 }
+
+-(UIButton *)makeDetailButton:(NSString *)imageName {
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(0, 0, 30, 30)];
+    [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor clearColor]];
+    return  button;
+}
+
+
 
 
 @end

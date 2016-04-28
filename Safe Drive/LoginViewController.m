@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import <KinveyKit/KinveyKit.h>
+
 
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
@@ -24,6 +26,29 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
+    NSString *userName = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
+    
+    [KCSUser loginWithUsername:userName password:password withCompletionBlock:^(KCSUser *user, NSError *errorOrNil, KCSUserActionResult result) {
+        if (errorOrNil != nil) {
+            NSLog(@"Error logging in: %@", errorOrNil.description);
+        }
+        else {
+            NSLog(@"Logged In as: %@", userName);
+            NSString *userType = [[KCSUser activeUser] getValueForAttribute:@"User Type"];
+            NSLog(@"%@",userType);
+            if ([userType isEqualToString:@"Parent"]) {
+                [self performSegueWithIdentifier:@"startAsParent" sender:nil];
+            }
+            else { //child
+                [self performSegueWithIdentifier:@"startAsChild" sender:nil];
+            }
+            
+            
+            
+            
+        }
+    }];
 }
 
 

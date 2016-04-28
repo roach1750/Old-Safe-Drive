@@ -15,6 +15,8 @@
 		2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABF91CCEFD2E008BBF2D /* TripViewController.m */; };
 		2143ABFD1CCEFD5A008BBF2D /* ChildImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2143ABFC1CCEFD5A008BBF2D /* ChildImageViewController.m */; };
 		2143ABFF1CCEFE45008BBF2D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2143ABFE1CCEFE45008BBF2D /* MapKit.framework */; };
+		2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD41CD19D5D00E7E34D /* Settings.m */; };
+		2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169CFD91CD24AB300E7E34D /* KinveyUploader.m */; };
 		21A3EA5A1CCED73E00B4A665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA591CCED73E00B4A665 /* main.m */; };
 		21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5C1CCED73E00B4A665 /* AppDelegate.m */; };
 		21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */; };
@@ -41,6 +43,10 @@
 		2143ABFB1CCEFD5A008BBF2D /* ChildImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildImageViewController.h; sourceTree = "<group>"; };
 		2143ABFC1CCEFD5A008BBF2D /* ChildImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildImageViewController.m; sourceTree = "<group>"; };
 		2143ABFE1CCEFE45008BBF2D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2169CFD31CD19D5D00E7E34D /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		2169CFD41CD19D5D00E7E34D /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		2169CFD81CD24AB300E7E34D /* KinveyUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyUploader.h; sourceTree = "<group>"; };
+		2169CFD91CD24AB300E7E34D /* KinveyUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyUploader.m; sourceTree = "<group>"; };
 		21A3EA551CCED73E00B4A665 /* Safe Drive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Drive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A3EA591CCED73E00B4A665 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21A3EA5B1CCED73E00B4A665 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +86,25 @@
 		2143ABF11CCEF71B008BBF2D /* Parent App */ = {
 			isa = PBXGroup;
 			children = (
+				2169CFD71CD19D7100E7E34D /* View Controllers */,
+			);
+			name = "Parent App";
+			sourceTree = "<group>";
+		};
+		2169CFD61CD19D6800E7E34D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2169CFD31CD19D5D00E7E34D /* Settings.h */,
+				2169CFD41CD19D5D00E7E34D /* Settings.m */,
+				2169CFD81CD24AB300E7E34D /* KinveyUploader.h */,
+				2169CFD91CD24AB300E7E34D /* KinveyUploader.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2169CFD71CD19D7100E7E34D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				2143ABEA1CCEF59B008BBF2D /* ChildernTVC.h */,
 				2143ABEB1CCEF59B008BBF2D /* ChildernTVC.m */,
 				2143ABF21CCEFCF8008BBF2D /* HistoryTVC.h */,
@@ -91,7 +116,7 @@
 				2143ABFB1CCEFD5A008BBF2D /* ChildImageViewController.h */,
 				2143ABFC1CCEFD5A008BBF2D /* ChildImageViewController.m */,
 			);
-			name = "Parent App";
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		21A3EA4C1CCED73E00B4A665 = {
@@ -120,6 +145,7 @@
 				21A3EA5F1CCED73E00B4A665 /* LoginViewController.m */,
 				2143ABE71CCEEB9A008BBF2D /* CreateAccountViewController.h */,
 				2143ABE81CCEEB9A008BBF2D /* CreateAccountViewController.m */,
+				2169CFD61CD19D6800E7E34D /* Model */,
 				2143ABF11CCEF71B008BBF2D /* Parent App */,
 				2143ABF01CCEF715008BBF2D /* Child App */,
 				21A3EA641CCED73E00B4A665 /* Assets.xcassets */,
@@ -287,11 +313,13 @@
 				2143ABFA1CCEFD2E008BBF2D /* TripViewController.m in Sources */,
 				2143ABEF1CCEF70D008BBF2D /* TakeReadingViewController.m in Sources */,
 				2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */,
+				2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */,
 				21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */,
 				21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */,
 				2143ABFD1CCEFD5A008BBF2D /* ChildImageViewController.m in Sources */,
 				2143ABF41CCEFCF8008BBF2D /* HistoryTVC.m in Sources */,
 				21A3EA5A1CCED73E00B4A665 /* main.m in Sources */,
+				2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */,
 				2143ABF71CCEFD11008BBF2D /* SettingsViewController.m in Sources */,
 				2143ABEC1CCEF59B008BBF2D /* ChildernTVC.m in Sources */,
 			);

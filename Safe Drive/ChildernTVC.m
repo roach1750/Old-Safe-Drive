@@ -7,6 +7,7 @@
 //
 
 #import "ChildernTVC.h"
+#import "KinveyUploader.h"
 
 @interface ChildernTVC ()
 
@@ -30,7 +31,9 @@
                                style:UIAlertActionStyleDefault
                                handler:^(UIAlertAction *action)
                                {
-                                   NSLog(@"%@",alertController.textFields.firstObject.text);
+                                   if (![alertController.textFields.firstObject.text isEqualToString:@""]) {
+                                       [self addChildWithEmail:alertController.textFields.firstObject.text];
+                                   }
                                    
                                }];
     
@@ -50,6 +53,11 @@
 
 }
 
+
+-(void)addChildWithEmail:(NSString *)email {
+    KinveyUploader *KU = [[KinveyUploader alloc]init];
+    [KU uploadDefaultSettingsWithChildEmail:email];
+}
 
 #pragma mark - Table view data source
 

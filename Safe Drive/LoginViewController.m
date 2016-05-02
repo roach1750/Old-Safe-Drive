@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [[KCSUser activeUser]logout];
+    [[KCSUser activeUser]logout];
     [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(loginIfUserExists) userInfo:nil repeats:NO];
     self.kD = [[KinveyDownloader alloc] init];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(segugeAsChild) name:@"SettingsDownloaded" object:nil];

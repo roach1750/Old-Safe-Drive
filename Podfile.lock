@@ -1,10 +1,13 @@
 PODS:
+  - Bean-iOS-OSX-SDK (2.0.1)
   - KinveyKit (1.40.7)
 
 DEPENDENCIES:
+  - Bean-iOS-OSX-SDK
   - KinveyKit
 
 SPEC CHECKSUMS:
+  Bean-iOS-OSX-SDK: 418041e1e2c33be7c6360b3d27fa36da209e1530
   KinveyKit: 76c5e4b2865b6f490d481845c88d1b5d5ed986f7
 
 COCOAPODS: 0.39.0

@@ -5,6 +5,6 @@
 
 target 'Safe Drive' do
   pod 'KinveyKit'
-
+  pod 'Bean-iOS-OSX-SDK'
 end
 

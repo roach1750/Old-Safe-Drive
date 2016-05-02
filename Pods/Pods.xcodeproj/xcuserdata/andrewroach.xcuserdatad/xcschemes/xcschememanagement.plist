@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bean-iOS-OSX-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Safe Drive.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6342634EDE225F3A5B292DA5C6504377</key>
+		<key>56F347750807A8EEAA491319E0EC4584</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3F81D273B2E457E90A78F6DE64E7C3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

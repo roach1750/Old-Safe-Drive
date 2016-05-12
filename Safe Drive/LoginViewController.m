@@ -28,6 +28,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(segugeAsChild) name:@"SettingsDownloaded" object:nil];
 }
 
+-(void)viewWillDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"SettingsDownloaded" object:nil];
+}
 
 
 -(void)loginIfUserExists{
@@ -61,10 +64,6 @@
             else { //child
                 [self.kD downloadSettingsAsChild];
             }
-            
-            
-            
-            
         }
     }];
 }
@@ -76,6 +75,7 @@
 
     }
     else {
+        
         [self performSegueWithIdentifier:@"startAsChild" sender:nil];
     }
 

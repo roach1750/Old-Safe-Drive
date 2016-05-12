@@ -718,7 +718,7 @@
         <image name="StartButtonImage" width="222" height="222"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lBo-HB-s3U"/>
         <segue reference="MSs-0w-qFz"/>
+        <segue reference="lid-ZE-8y0"/>
     </inferredMetricsTieBreakers>
 </document>

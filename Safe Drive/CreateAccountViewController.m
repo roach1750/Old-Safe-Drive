@@ -84,6 +84,7 @@
                           [self performSegueWithIdentifier:@"startAsParent" sender:nil];
                       }
                       else { //child
+                          
                           [self performSegueWithIdentifier:@"startAsChild" sender:nil];
                       }
                       

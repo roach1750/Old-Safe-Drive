@@ -25,7 +25,8 @@
 		21A3EA631CCED73E00B4A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA611CCED73E00B4A665 /* Main.storyboard */; };
 		21A3EA651CCED73E00B4A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA641CCED73E00B4A665 /* Assets.xcassets */; };
 		21A3EA681CCED73E00B4A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA661CCED73E00B4A665 /* LaunchScreen.storyboard */; };
-		21BC439E1CE40BD800DE4E5B /* libBACtrackSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */; };
+		21BC439F1CE52AEB00DE4E5B /* libBACtrackSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */; };
+		21BC43A21CE5333E00DE4E5B /* ConnectToCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC43A11CE5333E00DE4E5B /* ConnectToCarViewController.m */; };
 		C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,8 @@
 		21A3EA641CCED73E00B4A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21A3EA671CCED73E00B4A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21A3EA691CCED73E00B4A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BC43A01CE5333E00DE4E5B /* ConnectToCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectToCarViewController.h; sourceTree = "<group>"; };
+		21BC43A11CE5333E00DE4E5B /* ConnectToCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectToCarViewController.m; sourceTree = "<group>"; };
 		350F36476500D258CE8CBCBE /* Pods-Safe Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe Drive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Safe Drive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,7 +79,7 @@
 			files = (
 				2143ABFF1CCEFE45008BBF2D /* MapKit.framework in Frameworks */,
 				C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */,
-				21BC439E1CE40BD800DE4E5B /* libBACtrackSDK.a in Frameworks */,
+				21BC439F1CE52AEB00DE4E5B /* libBACtrackSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,8 @@
 				2143ABEE1CCEF70D008BBF2D /* ConfirmParentViewController.m */,
 				2169CFDE1CD29E9200E7E34D /* TestViewController.h */,
 				2169CFDF1CD29E9200E7E34D /* TestViewController.m */,
+				21BC43A01CE5333E00DE4E5B /* ConnectToCarViewController.h */,
+				21BC43A11CE5333E00DE4E5B /* ConnectToCarViewController.m */,
 			);
 			name = "Child App";
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				2143ABF41CCEFCF8008BBF2D /* HistoryTVC.m in Sources */,
 				21A3EA5A1CCED73E00B4A665 /* main.m in Sources */,
 				2169CFDA1CD24AB300E7E34D /* KinveyUploader.m in Sources */,
+				21BC43A21CE5333E00DE4E5B /* ConnectToCarViewController.m in Sources */,
 				2143ABF71CCEFD11008BBF2D /* SettingsViewController.m in Sources */,
 				2143ABEC1CCEF59B008BBF2D /* ChildernTVC.m in Sources */,
 				2169CFDD1CD24FB700E7E34D /* KinveyDownloader.m in Sources */,
@@ -458,8 +464,6 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Safe",
 					Drive,
-					"$(PROJECT_DIR)/Safe",
-					Drive,
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -500,8 +504,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Safe",
-					Drive,
 					"$(PROJECT_DIR)/Safe",
 					Drive,
 				);

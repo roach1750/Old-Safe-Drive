@@ -527,6 +527,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWN-4O-QFD">
+                                <rect key="frame" x="20" y="250" width="560" height="100"/>
+                                <color key="backgroundColor" red="0.89411764709999997" green="0.1960784314" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="94F-tc-o33"/>
+                                </constraints>
+                                <state key="normal" title="Connect To Car">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectToCarButtonPressed:" destination="KfU-X5-GXj" eventType="touchUpInside" id="XeW-dG-p3H"/>
+                                    <segue destination="3I1-Hn-ABk" kind="show" id="bbd-pM-f2w"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pW8-yr-EmQ">
                                 <rect key="frame" x="20" y="170" width="560" height="390"/>
                                 <subviews>
@@ -577,6 +591,8 @@
                             <constraint firstItem="A8K-YL-ZmA" firstAttribute="centerY" secondItem="N6H-gc-N4T" secondAttribute="centerY" id="3Ep-9s-QgH"/>
                             <constraint firstItem="pW8-yr-EmQ" firstAttribute="top" secondItem="LiG-ym-ijA" secondAttribute="bottom" constant="36" id="8JC-Mq-xbl"/>
                             <constraint firstItem="dJS-mt-Emd" firstAttribute="top" secondItem="m5u-Ul-Pu3" secondAttribute="bottom" constant="8" id="EM9-eN-KKe"/>
+                            <constraint firstItem="iWN-4O-QFD" firstAttribute="centerY" secondItem="N6H-gc-N4T" secondAttribute="centerY" id="Eym-ww-H3l"/>
+                            <constraint firstItem="iWN-4O-QFD" firstAttribute="leading" secondItem="N6H-gc-N4T" secondAttribute="leadingMargin" id="FD9-ba-qjN"/>
                             <constraint firstItem="LiG-ym-ijA" firstAttribute="top" secondItem="m5u-Ul-Pu3" secondAttribute="bottom" constant="8" id="Hp8-a4-GoL"/>
                             <constraint firstItem="1gV-1G-60r" firstAttribute="top" secondItem="pW8-yr-EmQ" secondAttribute="bottom" constant="40" id="N3o-ih-LZQ"/>
                             <constraint firstItem="A8K-YL-ZmA" firstAttribute="leading" secondItem="LiG-ym-ijA" secondAttribute="trailing" constant="-346" id="OUK-jr-tqI"/>
@@ -585,14 +601,17 @@
                             <constraint firstItem="dJS-mt-Emd" firstAttribute="trailing" secondItem="N6H-gc-N4T" secondAttribute="trailingMargin" id="WZf-b8-H7X"/>
                             <constraint firstItem="pW8-yr-EmQ" firstAttribute="top" secondItem="dJS-mt-Emd" secondAttribute="bottom" constant="36" id="ZI2-g5-OIU"/>
                             <constraint firstItem="dJS-mt-Emd" firstAttribute="leading" secondItem="N6H-gc-N4T" secondAttribute="leadingMargin" id="cdW-Hd-icm"/>
+                            <constraint firstItem="iWN-4O-QFD" firstAttribute="trailing" secondItem="N6H-gc-N4T" secondAttribute="trailingMargin" id="eRw-5j-cRe"/>
                             <constraint firstItem="pW8-yr-EmQ" firstAttribute="trailing" secondItem="N6H-gc-N4T" secondAttribute="trailingMargin" id="nUC-WD-H0h"/>
                             <constraint firstItem="LiG-ym-ijA" firstAttribute="height" secondItem="N6H-gc-N4T" secondAttribute="height" multiplier="0.15" constant="-28" id="p7U-Jx-PfS"/>
+                            <constraint firstItem="iWN-4O-QFD" firstAttribute="centerX" secondItem="N6H-gc-N4T" secondAttribute="centerX" id="uch-lS-cy3"/>
                             <constraint firstItem="A8K-YL-ZmA" firstAttribute="centerX" secondItem="N6H-gc-N4T" secondAttribute="centerX" id="y4W-x6-2Dc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Safe Drive" id="ZUy-MG-FgM"/>
                     <connections>
                         <outlet property="connectButton" destination="LiG-ym-ijA" id="63C-gH-yyr"/>
+                        <outlet property="connectToCarButton" destination="iWN-4O-QFD" id="9Hx-w7-5TC"/>
                         <outlet property="countdownLabel" destination="jOH-J3-sfW" id="lbp-p0-FcC"/>
                         <outlet property="startButton" destination="A8K-YL-ZmA" id="Fze-Q9-MYU"/>
                         <outlet property="statusLabel" destination="dJS-mt-Emd" id="cTZ-sr-z86"/>
@@ -601,7 +620,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8yJ-GJ-QHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5071" y="-11"/>
+            <point key="canvasLocation" x="5187" y="-403"/>
+        </scene>
+        <!--Safe Drive-->
+        <scene sceneID="ODj-Al-1Mi">
+            <objects>
+                <viewController id="3I1-Hn-ABk" customClass="ConnectToCarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fTQ-Tv-zmQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tMf-S0-cbn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wke-Ny-uJm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Label " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdG-Dv-Rge">
+                                <rect key="frame" x="20" y="72" width="560" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="xQC-hr-wmz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.050980392159999999" green="0.43137254899999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jdG-Dv-Rge" firstAttribute="top" secondItem="fTQ-Tv-zmQ" secondAttribute="bottom" constant="8" id="BIV-k6-U3r"/>
+                            <constraint firstItem="jdG-Dv-Rge" firstAttribute="trailing" secondItem="wke-Ny-uJm" secondAttribute="trailingMargin" id="MUg-IR-9Dk"/>
+                            <constraint firstItem="jdG-Dv-Rge" firstAttribute="leading" secondItem="wke-Ny-uJm" secondAttribute="leadingMargin" id="OJh-hi-gY9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Safe Drive" id="dS9-54-t0i"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="jdG-Dv-Rge" id="M1c-21-7tE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xV0-ra-BVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5912" y="-403"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Nki-pH-FwK">
@@ -711,7 +768,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ki-GE-H5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4185" y="-11"/>
+            <point key="canvasLocation" x="4437" y="-403"/>
         </scene>
     </scenes>
     <resources>

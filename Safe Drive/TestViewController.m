@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *countdownLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
+@property (weak, nonatomic) IBOutlet UIButton *connectToCarButton;
 
 @property (strong, nonatomic) CAShapeLayer *circleAnimationLayer;
 
@@ -88,25 +89,33 @@ bool firstTimeOnCountdown;
 }
 
 
+bool firstTimeBlowing;
+
 - (void)BacTrackStart
 {
+    firstTimeBlowing = TRUE;
     NSLog(@"start blowing");
     [self.circleAnimationLayer removeFromSuperlayer];
     [self.circleAnimationLayer removeAllAnimations];
     [self.statusLabel setText:@"Blow!"];
     [self.countdownLabel setText:@""];
     [self.countdownLabel setHighlighted:TRUE];
-    [self drawCircleWithDuration:5.0 andColor:[UIColor greenColor]];
+
 }
 
 - (void)BacTrackBlow
 {
-    
+    if (firstTimeBlowing == TRUE) {
+        [self drawCircleWithDuration:5.0 andColor:[UIColor greenColor]];
+        firstTimeBlowing = FALSE;
+    }
 }
 
 - (void)BacTrackAnalyzing
 {
-    [self.statusLabel setText:@"Blow!"];
+    [self.circleAnimationLayer removeFromSuperlayer];
+    [self.circleAnimationLayer removeAllAnimations];
+    [self.statusLabel setText:@"Analyzing..."];
     [self.viewForTesting setHidden:TRUE];
 
 }
@@ -114,8 +123,22 @@ bool firstTimeOnCountdown;
 
 -(void)BacTrackResults:(CGFloat)bac
 {
+    [self.circleAnimationLayer removeFromSuperlayer];
+    [self.circleAnimationLayer removeAllAnimations];
     [self.viewForTesting setHidden:TRUE];
     [self.statusLabel setText:[NSString stringWithFormat:@"Your BAC: %f",bac]];
+    if (bac == 0.0) {
+        [self addStartCarButton];
+    }
+}
+
+
+-(void)addStartCarButton {
+    [self.connectToCarButton setHidden:FALSE];
+}
+
+- (IBAction)connectToCarButtonPressed:(UIButton *)sender {
+    
 }
 
 

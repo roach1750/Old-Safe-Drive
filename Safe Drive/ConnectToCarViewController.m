@@ -43,7 +43,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%lu",(unsigned long)self.beans.count);
     return [self.beans count];
 }
 

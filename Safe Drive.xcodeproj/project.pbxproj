@@ -27,6 +27,7 @@
 		21A3EA681CCED73E00B4A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3EA661CCED73E00B4A665 /* LaunchScreen.storyboard */; };
 		21BC439F1CE52AEB00DE4E5B /* libBACtrackSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */; };
 		21BC43A21CE5333E00DE4E5B /* ConnectToCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC43A11CE5333E00DE4E5B /* ConnectToCarViewController.m */; };
+		21BC43AA1CE55D3F00DE4E5B /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC43A91CE55D3F00DE4E5B /* Event.m */; };
 		C831627168D05547613C6D58 /* libPods-Safe Drive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		21BC43A01CE5333E00DE4E5B /* ConnectToCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectToCarViewController.h; sourceTree = "<group>"; };
 		21BC43A11CE5333E00DE4E5B /* ConnectToCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectToCarViewController.m; sourceTree = "<group>"; };
 		21BC43A31CE54FC300DE4E5B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		21BC43A81CE55D3F00DE4E5B /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		21BC43A91CE55D3F00DE4E5B /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		350F36476500D258CE8CBCBE /* Pods-Safe Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe Drive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Safe Drive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +116,8 @@
 			children = (
 				2169CFD31CD19D5D00E7E34D /* Settings.h */,
 				2169CFD41CD19D5D00E7E34D /* Settings.m */,
+				21BC43A81CE55D3F00DE4E5B /* Event.h */,
+				21BC43A91CE55D3F00DE4E5B /* Event.m */,
 				2169CFD81CD24AB300E7E34D /* KinveyUploader.h */,
 				2169CFD91CD24AB300E7E34D /* KinveyUploader.m */,
 				2169CFDB1CD24FB700E7E34D /* KinveyDownloader.h */,
@@ -335,6 +340,7 @@
 				2143ABEF1CCEF70D008BBF2D /* ConfirmParentViewController.m in Sources */,
 				2169CFE01CD29E9200E7E34D /* TestViewController.m in Sources */,
 				2143ABE91CCEEB9A008BBF2D /* CreateAccountViewController.m in Sources */,
+				21BC43AA1CE55D3F00DE4E5B /* Event.m in Sources */,
 				2169CFD51CD19D5D00E7E34D /* Settings.m in Sources */,
 				21A3EA601CCED73E00B4A665 /* LoginViewController.m in Sources */,
 				21A3EA5D1CCED73E00B4A665 /* AppDelegate.m in Sources */,

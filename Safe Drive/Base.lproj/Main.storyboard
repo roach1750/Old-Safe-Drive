@@ -545,7 +545,7 @@
                                 <rect key="frame" x="20" y="170" width="560" height="390"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOH-J3-sfW">
-                                        <rect key="frame" x="240" y="176" width="80" height="39.5"/>
+                                        <rect key="frame" x="240" y="175" width="80" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -602,11 +602,19 @@
                             <constraint firstItem="pW8-yr-EmQ" firstAttribute="top" secondItem="dJS-mt-Emd" secondAttribute="bottom" constant="36" id="ZI2-g5-OIU"/>
                             <constraint firstItem="dJS-mt-Emd" firstAttribute="leading" secondItem="N6H-gc-N4T" secondAttribute="leadingMargin" id="cdW-Hd-icm"/>
                             <constraint firstItem="iWN-4O-QFD" firstAttribute="trailing" secondItem="N6H-gc-N4T" secondAttribute="trailingMargin" id="eRw-5j-cRe"/>
+                            <constraint firstItem="iWN-4O-QFD" firstAttribute="centerY" secondItem="A8K-YL-ZmA" secondAttribute="centerY" id="myX-Gf-t2m"/>
                             <constraint firstItem="pW8-yr-EmQ" firstAttribute="trailing" secondItem="N6H-gc-N4T" secondAttribute="trailingMargin" id="nUC-WD-H0h"/>
                             <constraint firstItem="LiG-ym-ijA" firstAttribute="height" secondItem="N6H-gc-N4T" secondAttribute="height" multiplier="0.15" constant="-28" id="p7U-Jx-PfS"/>
                             <constraint firstItem="iWN-4O-QFD" firstAttribute="centerX" secondItem="N6H-gc-N4T" secondAttribute="centerX" id="uch-lS-cy3"/>
                             <constraint firstItem="A8K-YL-ZmA" firstAttribute="centerX" secondItem="N6H-gc-N4T" secondAttribute="centerX" id="y4W-x6-2Dc"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Eym-ww-H3l"/>
+                                <exclude reference="uch-lS-cy3"/>
+                                <exclude reference="OUK-jr-tqI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Safe Drive" id="ZUy-MG-FgM"/>
                     <connections>

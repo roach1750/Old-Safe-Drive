@@ -8,8 +8,10 @@
 
 #import "TestViewController.h"
 #import "BACtrack.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface TestViewController () <BacTrackAPIDelegate>
+
+@interface TestViewController () <BacTrackAPIDelegate, CLLocationManagerDelegate>
 @property (strong, nonatomic) BacTrackAPI *mBacTrack;
 @property (weak, nonatomic) IBOutlet UIButton *connectButton;
 @property (weak, nonatomic) IBOutlet UIView *viewForTesting;
@@ -17,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UIButton *connectToCarButton;
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @property (strong, nonatomic) CAShapeLayer *circleAnimationLayer;
 
@@ -34,6 +38,7 @@
     [self.startButton setHidden:TRUE];
     [self.statusLabel setHidden:TRUE];
     [self.connectToCarButton setHidden:FALSE];
+    [self setUpLocationServices];
 
     [super viewDidLoad];
 }
@@ -214,7 +219,33 @@ bool firstTimeBlowing;
 }
 
 
+- (void)setUpLocationServices {
+    self.locationManager = [[CLLocationManager alloc]init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    if ([CLLocationManager locationServicesEnabled]) {
+        [self.locationManager startUpdatingLocation];
+    }
+    if ([CLLocationManager authorizationStatus] ==  kCLAuthorizationStatusNotDetermined) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    
+}
 
+
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
+    if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        [self.locationManager startUpdatingLocation];
+        
+    }
+}
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+    CLLocation *location = [locations firstObject];
+    NSLog(@"Current Location is: %f, %f",location.coordinate.latitude, location.coordinate.longitude);
+    [self.locationManager stopUpdatingLocation];
+}
 
 
 @end

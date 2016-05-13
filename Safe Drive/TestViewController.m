@@ -33,7 +33,8 @@
     [self.countdownLabel setHidden:TRUE];
     [self.startButton setHidden:TRUE];
     [self.statusLabel setHidden:TRUE];
-    
+    [self.connectToCarButton setHidden:FALSE];
+
     [super viewDidLoad];
 }
 
@@ -138,7 +139,8 @@ bool firstTimeBlowing;
 }
 
 - (IBAction)connectToCarButtonPressed:(UIButton *)sender {
-    
+    [self.mBacTrack stopScan];
+    [self.mBacTrack disconnect];
 }
 
 

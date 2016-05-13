@@ -68,6 +68,7 @@
 		21A3EA691CCED73E00B4A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21BC43A01CE5333E00DE4E5B /* ConnectToCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectToCarViewController.h; sourceTree = "<group>"; };
 		21BC43A11CE5333E00DE4E5B /* ConnectToCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectToCarViewController.m; sourceTree = "<group>"; };
+		21BC43A31CE54FC300DE4E5B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		350F36476500D258CE8CBCBE /* Pods-Safe Drive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Safe Drive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Safe Drive/Pods-Safe Drive.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Safe Drive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +188,7 @@
 		45681DEE1E688C9D8BA300AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21BC43A31CE54FC300DE4E5B /* CoreBluetooth.framework */,
 				2169CFE31CD2A55600E7E34D /* libBACtrackSDK.a */,
 				2143ABFE1CCEFE45008BBF2D /* MapKit.framework */,
 				6DC8633CC1B6A6896DD55872 /* libPods-Safe Drive.a */,

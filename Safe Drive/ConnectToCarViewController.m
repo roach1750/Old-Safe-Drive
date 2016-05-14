@@ -25,13 +25,13 @@
     self.beans = [NSMutableDictionary dictionary];
     
     self.beanManager = [[PTDBeanManager alloc] initWithDelegate:self];
-    
+    self.beanManager.delegate = self;
+
     [super viewDidLoad];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    self.beanManager.delegate = self;
     [self.tableView reloadData];
 }
 
@@ -85,15 +85,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.beanManager connectToBean:self.bean error:nil];
     [self.tableView deselectRowAtIndexPath:indexPath animated:TRUE];
 }
-
-
-
-
-
-
-
 
 
 #pragma mark - BeanManagerDelegate Callbacks
@@ -108,16 +102,29 @@
         return;
     }
 }
-- (void)BeanManager:(PTDBeanManager*)beanManager didDiscoverBean:(PTDBean*)bean error:(NSError*)error{
+//- (void)BeanManager:(PTDBeanManager*)beanManager didDiscoverBean:(PTDBean*)bean error:(NSError*)error{
+//    NSUUID * key = bean.identifier;
+//    if (![self.beans objectForKey:key]) {
+//        // New bean
+//        NSLog(@"BeanManager:didDiscoverBean:error %@", bean);
+//        [self.beans setObject:bean forKey:key];
+//    }
+//    [self.tableView reloadData];
+//}
+
+- (void)beanManager:(PTDBeanManager*)beanManager didDiscoverBean:(PTDBean*)bean error:(NSError*)error{
     NSUUID * key = bean.identifier;
     if (![self.beans objectForKey:key]) {
         // New bean
         NSLog(@"BeanManager:didDiscoverBean:error %@", bean);
         [self.beans setObject:bean forKey:key];
+        self.bean = bean;
     }
     [self.tableView reloadData];
 }
-- (void)BeanManager:(PTDBeanManager*)beanManager didConnectToBean:(PTDBean*)bean error:(NSError*)error{
+
+
+- (void)beanManager:(PTDBeanManager*)beanManager didConnectToBean:(PTDBean*)bean error:(NSError*)error{
     if (error) {
         NSLog(@"ERROR while trying to connect: %@", [error localizedDescription]);
         return;
@@ -131,7 +138,7 @@
     [self.tableView reloadData];
 }
 
-- (void)BeanManager:(PTDBeanManager*)beanManager didDisconnectBean:(PTDBean*)bean error:(NSError*)error{
+- (void)beanManager:(PTDBeanManager*)beanManager didDisconnectBean:(PTDBean*)bean error:(NSError*)error{
     [self.tableView reloadData];
 }
 
